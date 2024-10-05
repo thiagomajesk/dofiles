@@ -44,6 +44,18 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "globalSummon",
+                "desktop": "toCurrent",
+                "dropdownDuration": 200,
+                "monitor": "toMouse",
+                "name": "_quake",
+                "toggleVisibility": true
+            },
+            "keys": "win+shift+\u00b4"
         }
     ],
     "centerOnLaunch": true,
@@ -60,7 +72,7 @@
     {
         "defaults": 
         {
-            "colorScheme": "Houston",
+            "colorScheme": "Catppuccin Mocha",
             "cursorColor": "#FFFFFF",
             "cursorShape": "filledBox",
             "font": 
@@ -69,6 +81,8 @@
                 "size": 11.0
             },
             "opacity": 80,
+            "padding": "4",
+            "scrollbarState": "hidden",
             "useAcrylic": true
         },
         "list": 
@@ -95,29 +109,6 @@
     },
     "schemes": 
     [
-        {
-            "background": "#0E1019",
-            "black": "#232323",
-            "blue": "#008DF8",
-            "brightBlack": "#444444",
-            "brightBlue": "#0092FF",
-            "brightCyan": "#67FFF0",
-            "brightGreen": "#ABE15B",
-            "brightPurple": "#9A5FEB",
-            "brightRed": "#FF2740",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFD242",
-            "cursorColor": "#FF0018",
-            "cyan": "#00D8EB",
-            "foreground": "#FFFAF4",
-            "green": "#8CE10B",
-            "name": "Argonaut",
-            "purple": "#6D43A6",
-            "red": "#FF000F",
-            "selectionBackground": "#002A3B",
-            "white": "#FFFFFF",
-            "yellow": "#FFB900"
-        },
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -165,27 +156,27 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#17191E",
-            "black": "#17191E",
-            "blue": "#2B7ECA",
-            "brightBlack": "#545864",
-            "brightBlue": "#54B9FF",
-            "brightCyan": "#00DAEF",
-            "brightGreen": "#4BF3C8",
-            "brightPurple": "#CC75F4",
-            "brightRed": "#F4587E",
-            "brightWhite": "#FAFAFA",
-            "brightYellow": "#FFD493",
-            "cursorColor": "#AEAFAD",
-            "cyan": "#24C0CF",
-            "foreground": "#CCCCCC",
-            "green": "#23D18B",
-            "name": "Houston",
-            "purple": "#AD5DCA",
-            "red": "#DC3657",
-            "selectionBackground": "#FFFFFF",
-            "white": "#EEF0F9",
-            "yellow": "#FFC368"
+            "background": "#1E1E2E",
+            "black": "#45475A",
+            "blue": "#89B4FA",
+            "brightBlack": "#585B70",
+            "brightBlue": "#89B4FA",
+            "brightCyan": "#94E2D5",
+            "brightGreen": "#A6E3A1",
+            "brightPurple": "#F5C2E7",
+            "brightRed": "#F38BA8",
+            "brightWhite": "#A6ADC8",
+            "brightYellow": "#F9E2AF",
+            "cursorColor": "#F5E0DC",
+            "cyan": "#94E2D5",
+            "foreground": "#CDD6F4",
+            "green": "#A6E3A1",
+            "name": "Catppuccin Mocha",
+            "purple": "#F5C2E7",
+            "red": "#F38BA8",
+            "selectionBackground": "#585B70",
+            "white": "#BAC2DE",
+            "yellow": "#F9E2AF"
         },
         {
             "background": "#282C34",
@@ -229,7 +220,7 @@
             "name": "One Half Light",
             "purple": "#A626A4",
             "red": "#E45649",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#4F525D",
             "white": "#FAFAFA",
             "yellow": "#C18301"
         },
@@ -275,7 +266,7 @@
             "name": "Solarized Light",
             "purple": "#D33682",
             "red": "#DC322F",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#073642",
             "white": "#EEE8D5",
             "yellow": "#B58900"
         },
@@ -321,7 +312,7 @@
             "name": "Tango Light",
             "purple": "#75507B",
             "red": "#CC0000",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#555753",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
         },
@@ -373,50 +364,32 @@
         }
     ],
     "startOnUserLogin": true,
+    "theme": "Catppuccin Mocha",
     "themes": 
     [
         {
-            "name": "legacyDark",
+            "name": "Catppuccin Mocha",
             "tab": 
             {
-                "background": null,
+                "background": "#1E1E2EFF",
+                "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#181825FF",
+                "unfocusedBackground": "#11111BFF"
             },
             "window": 
             {
                 "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyLight",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "light",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacySystem",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "system",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
                 "useMica": false
             }
         }
     ],
-    "useAcrylicInTabRow": true
+    "useAcrylicInTabRow": false
 }
